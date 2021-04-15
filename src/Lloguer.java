@@ -1,27 +1,31 @@
 import java.util.Date;
 
-import java.util.ArrayList;
-
 public class Lloguer {
 	private Date data;
 	private int dies;
-	private ArrayList<Vehicle> vehicles = new ArrayList<Vehicle>();
+	private Vehicle vehicle;
 	
-	public Lloguer(Date data, int dies, ArrayList<Vehicle> vehicles) {
-		this.data = data;
-		this.dies = dies;
-		this.vehicles = vehicles;
-	}
 	public Lloguer(Date date, int i, Vehicle vehicleBasic) {
-		this.data = data;
-		this.dies = dies;
-		this.vehicles = new ArrayList<Vehicle>();
-		this.vehicles.add(vehicleBasic);
+		this.data = date;
+		this.dies = i;
+		this.vehicle = vehicleBasic;
 	}
 	public Date getData() {
 		return data;
 	}
 	public void setData(Date data) {
 		this.data = data;
+	}
+	public int getDies() {
+		return dies;
+	}
+	public void setDies(int dies) {
+		this.dies = dies;
+	}
+	public Vehicle getVehicle() {
+		return this.vehicle;
+	}
+	public void setVehicle(Vehicle vehicle) {
+		this.vehicle = vehicle;
 	}
 }
