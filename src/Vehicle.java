@@ -7,7 +7,7 @@ public class Vehicle {
 	private String model;
 	private String categoria;
 	
-	public Vehicle(String marca, String model, String basic2) {
+	public Vehicle(String marca, String model, String categoria) {
 		this.marca = marca;
 		this.model = model;
 		this.categoria = categoria;
